@@ -1,17 +1,12 @@
 # larablade-demo
-DEMO app built with Laravel and Blade-Only Starter Kit based on laraveldaily/starter-kit
- 
----
-
+DEMO app built with Laravel 12 based on laraveldaily/starter-kit
+  
 ## Introduction
  
 - A CoreUI/AdminLTE inspired design layout
 - Blade + AlpineJS code
- 
----
- 
----
-
+  
+  
 ## What is Inside?
 
 Inside you will find all the functions that you would expect:
@@ -26,8 +21,7 @@ Inside you will find all the functions that you would expect:
     - Profile Information Page
     - Password Update Page
     - Appearance Preferences
-
----
+ 
 
 ## How to use it?
 
@@ -45,9 +39,6 @@ To use this kit, you can install it using:
 6) Start the development server:
 ```composer run dev```
 
-
-
----
  
 
 ## Licence
