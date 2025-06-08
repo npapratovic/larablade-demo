@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Settings;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,6 +19,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('settings/password', [Settings\PasswordController::class, 'edit'])->name('settings.password.edit');
     Route::put('settings/password', [Settings\PasswordController::class, 'update'])->name('settings.password.update');
     Route::get('settings/appearance', [Settings\AppearanceController::class, 'edit'])->name('settings.appearance.edit');
+
+    // tasks resource:
+    Route::resource('tasks', TaskController::class)->names('tasks');
+
 });
 
 require __DIR__.'/auth.php';

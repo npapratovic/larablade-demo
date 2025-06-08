@@ -8,7 +8,8 @@
                             <!-- Dashboard -->
                             <x-layouts.sidebar-link href="{{ route('dashboard') }}" icon='fas-house'
                                 :active="request()->routeIs('dashboard*')">Dashboard</x-layouts.sidebar-link>
-
+                            <x-layouts.sidebar-link href="{{ route('tasks.index') }}" icon='fas-tasks'
+                                :active="request()->routeIs('tasks.index*')">Tasks</x-layouts.sidebar-link>
                             <!-- Example two level -->
                             <x-layouts.sidebar-two-level-link-parent title="Example two level" icon="fas-house"
                                 :active="request()->routeIs('two-level*')">
